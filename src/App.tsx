@@ -1,29 +1,87 @@
 import { scroll } from './animate'
+// import logo from "./assets/logo1.png"
 function App() {
   return (
     <>
-<div className="center-marker">
-  <div></div>
-</div>
-<div id="jsSlideshow" data-speed="5" data-transition="0.55" className="js-slideshow">
-  <div className="js-slideshow__slides-wrapper">
-    <div className="js-slideshow__slides">
-      <img src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/953724/pexels-photo-953724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/3494806/pexels-photo-3494806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/973506/pexels-photo-973506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/1937555/pexels-photo-1937555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/3375493/pexels-photo-3375493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/2710282/pexels-photo-2710282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/258112/pexels-photo-258112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/3534156/pexels-photo-3534156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
-      <img src="https://images.pexels.com/photos/792326/pexels-photo-792326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""/>
+    <header className="main-header">
+      <section><div className='nav'> 
+       <div className="nav-wrapper">
+       <a href="/"><img  alt="hotels.com" width="250" src="https://a.cdn-hotels.com/kesstatic/d3ecc1933ab5a9d9e4e6.png"/></a>
       
-    </div>
-  </div>
+          <nav className="main-nav">
+        <ul className="main-list">
+          <li className="main-list__item"><a href="" className="main-list__link">Write a Review</a></li>
+          <li className="main-list__item"><a href="" className="main-list__link">Events</a></li>
+          <li className="main-list__item"><a href="" className="main-list__link">Talk</a></li>
+        </ul>
+      </nav>
+          <div className="logon-box">
+        <ul className="logon-list">
+          <li className="logon-list__item"><a href="" className="logon-list__link Login">Log In</a></li>
+          <li className="logon-list__item"><a href="" className="logon-list__link SignUp">Sign Up</a></li>
+        </ul>
+      </div>
+        </div>
+        </div></section>
+      <div className="main-header__wrapper">
+      
+        <div className="main-logo">
+        <h1 className="css-1x9iesk">Hampton Inn &amp; Suites Camp Springs/Andrews AFB</h1>
+        </div>
+        <div className="search">
+          <div className="left-side">
+            <input type="text" placeholder="tacos, cheap dinner, Max's" className="field request"/>
+            <div className="field-wrapper">
+                <span className="field-title find">Find</span>
+            </div>
+            <ul className="left-side__sublist">
+              <li className="left-side__subitem"><a href="#" className="left-side__sublink restaraunts first">Restaurants</a></li>
+              <li className="left-side__subitem"><a href="#" className="left-side__sublink bar">Breakfast &amp; Brunch</a></li>
+              <li className="left-side__subitem"><a href="#" className="left-side__sublink coffee">Coffee &amp; tea</a></li>
+              <li className="left-side__subitem"><a href="#" className="left-side__sublink delivery">Delivery</a></li>
+              <li className="left-side__subitem"><a href="#" className="left-side__sublink takeout">Takeout</a></li>
+              <li className="left-side__subitem"><a href="#" className="left-side__sublink reservations">Reservations</a></li>
+            </ul>
+          </div>
+          <div className="right-side">
+            <input type="text" placeholder="San Francisco, CA" className="field location"/>            
+            <div className="field-wrapper">
+              <span className="field-title near">Near</span>
+            </div>
+            <ul className="right-side__sublist">
+              <li className="right-side__subitem"><a href="#" className="right-side__sublink current">Current Location</a></li>
+              <li className="right-side__subitem"><a href="#" className="right-side__sublink state">San Francisco</a></li>
+            </ul>
+          </div>
+          <a href="#" className="search-button">Search</a>
+        </div>
+   
+        <div className="categories">
+        <ul className="categories-list">
+          <li className="categories-list__item">
+            <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/svg_icons/aafb83c8f161/assets/sprite.png" alt="" width="18px" height="18px" className="categories-list__img restaurants-icon"/>
+            <a href="#" className="categories-list__link">Restaurants</a>
+          </li>
+          <li className="categories-list__item">
+            <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/svg_icons/aafb83c8f161/assets/sprite.png" alt="" width="18px" height="18px" className="categories-list__img nightlife-icon"/>
+            <a href="#" className="categories-list__link">Nightlife</a>
+          </li>
+          <li className="categories-list__item">
+            <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/svg_icons/aafb83c8f161/assets/sprite.png" alt="" width="18px" height="18px" className="categories-list__img services-icon"/>
+            <a href="#" className="categories-list__link">Services</a>
+          </li>
+          <li className="categories-list__item">
+            <img src="https://s3-media2.fl.yelpcdn.com/assets/srv0/svg_icons/aafb83c8f161/assets/sprite.png" alt="" width="18px" height="18px" className="categories-list__img delivery-icon"/>
+            <a href="#" className="categories-list__link">Delivery</a>
+          </li>
+        </ul>
+      </div>
+   
+      </div>
+    </header>
+
+
     <button onClick={()=>scroll()}>scroll</button>
-</div>
     </>
   );
 }

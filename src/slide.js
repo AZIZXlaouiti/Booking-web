@@ -236,4 +236,4 @@ const clickSlide = () => {
     xDown = null;
     yDown = null;
   }
-  module.exports 
+  
