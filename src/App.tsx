@@ -1,12 +1,12 @@
 import { scroll } from './animate'
-// import logo from "./assets/logo1.png"
+import logo from "./assets/booking.png"
 function App() {
   return (
     <>
     <header className="main-header">
       <section><div className='nav'> 
        <div className="nav-wrapper">
-       <a href="/"><img  alt="hotels.com" width="250" src="https://a.cdn-hotels.com/kesstatic/d3ecc1933ab5a9d9e4e6.png"/></a>
+       <a href="/"><img  alt="hotels.com" width="250" src={logo}/></a>
       
           <nav className="main-nav">
         <ul className="main-list">
@@ -26,7 +26,7 @@ function App() {
       <div className="main-header__wrapper">
       
         <div className="main-logo">
-        <h1 className="css-1x9iesk">Hampton Inn &amp; Suites Camp Springs/Andrews AFB</h1>
+        <h1 className="css-1x9iesk">Going somewhere?</h1>
         </div>
         <div className="search">
           <div className="left-side">
