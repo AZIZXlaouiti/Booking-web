@@ -4,7 +4,7 @@ function App() {
   return (
     <>
     <header className="main-header">
-      <section><div className='nav'> 
+     <div className='nav'> 
        <div className="nav-wrapper">
        <a href="/"><img  alt="hotels.com" width="250" src={logo}/></a>
       
@@ -14,15 +14,16 @@ function App() {
           <li className="main-list__item"><a href="" className="main-list__link">Events</a></li>
           <li className="main-list__item"><a href="" className="main-list__link">Talk</a></li>
         </ul>
-      </nav>
-          <div className="logon-box">
+        <div className="logon-box">
         <ul className="logon-list">
           <li className="logon-list__item"><a href="" className="logon-list__link Login">Log In</a></li>
           <li className="logon-list__item"><a href="" className="logon-list__link SignUp">Sign Up</a></li>
         </ul>
       </div>
+      </nav>
+        
         </div>
-        </div></section>
+        </div>
       <div className="main-header__wrapper">
       
         <div className="main-logo">
@@ -79,7 +80,7 @@ function App() {
    
       </div>
     </header>
-
+  
 
     <button onClick={()=>scroll()}>scroll</button>
     </>
